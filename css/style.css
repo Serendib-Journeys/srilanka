@@ -450,3 +450,20 @@ form {
 .location-group {
   margin-bottom: 15px;
 }
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #264653;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #86b817;
+  color: #fff;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  color: #555;
+  background-color: #f4f4f4;
+}
