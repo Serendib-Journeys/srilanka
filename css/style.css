@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #86b817;
+  --primary: #3db320;
   --secondary: #fe8800;
   --light: #f5f5f5;
   --dark: #14141f;
@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: center;
   font-weight: normal;
-  border-radius: 0px;
+  border-radius: 50%; /* Make the navbar brand circular */
 }
 
 /*** Navbar ***/
@@ -458,7 +458,7 @@ form {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #86b817;
+  background-color: #3db320;
   color: #fff;
 }
 
@@ -466,4 +466,86 @@ form {
   font-size: 1rem;
   color: #555;
   background-color: #f4f4f4;
+}
+
+.d-inline-flex {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.d-inline-flex:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.navbar-brand {
+  border-radius: 50%; /* Make the navbar brand circular */
+  overflow: hidden; /* Hide any overflow from child elements */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05); /* Scale up on hover for effect */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.text-primary-new {
+  font-family: "Pacifico", cursive; /* Fancy, stylish font */
+  font-size: 2.2rem; /* Larger font size for desktop */
+  letter-spacing: 2px; /* More spaced for a luxurious feel */
+  background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
+  -webkit-background-clip: text; /* Clip gradient to the text */
+  -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(0, 0, 0, 0.2),
+    -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
+  transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
+    letter-spacing 0.4s ease;
+  padding-bottom: 3px;
+}
+
+.text-primary-new:hover {
+  transform: scale(1.15) rotate(2deg); /* Scale up and rotate slightly on hover */
+  letter-spacing: 2px; /* Maintain spacing on hover for a dramatic effect */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Even bolder shadow on hover */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .text-primary-new {
+    font-size: 1.5rem; /* Slightly smaller font for tablet and mobile */
+    letter-spacing: 1.5px; /* Adjust letter-spacing to fit smaller screens */
+  }
+
+  .text-primary-new:hover {
+    transform: scale(1.1) rotate(1deg); /* More subtle scale and rotation on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-primary-new {
+    font-size: 1.3rem; /* Smaller font size for mobile screens */
+    letter-spacing: 1px; /* Adjusted for smaller screens */
+  }
+
+  .text-primary-new:hover {
+    transform: scale(1.05); /* Even more subtle scaling on mobile */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow for smaller displays */
+  }
+}
+
+.sticky-toggler {
+  position: sticky; /* Make the button sticky */
+  top: 20px; /* Distance from the top of the viewport */
+  z-index: 1050; /* Higher than other elements to ensure visibility */
+  border: none; /* Optional: remove border for a cleaner look */
+  border-radius: 5px; /* Optional: rounded corners */
+  padding: 5px; /* Optional: padding for better clickability */
+}
+
+.sticky-toggler:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Optional: change background on hover */
 }
