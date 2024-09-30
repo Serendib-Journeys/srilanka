@@ -490,44 +490,44 @@ form {
 
 .text-primary-new {
   font-family: "Pacifico", cursive; /* Fancy, stylish font */
-  font-size: 2.2rem; /* Larger font size for desktop */
+  font-size: 2.5rem; /* Larger font size for desktop */
   letter-spacing: 2px; /* More spaced for a luxurious feel */
   background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
   -webkit-background-clip: text; /* Clip gradient to the text */
   -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(0, 0, 0, 0.2),
-    -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1), -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
   transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
     letter-spacing 0.4s ease;
   padding-bottom: 3px;
 }
 
 .text-primary-new:hover {
-  transform: scale(1.15) rotate(2deg); /* Scale up and rotate slightly on hover */
-  letter-spacing: 2px; /* Maintain spacing on hover for a dramatic effect */
+  transform: scale(2.15) rotate(2deg); /* Scale up and rotate slightly on hover */
+  letter-spacing: 3px; /* Maintain spacing on hover for a dramatic effect */
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Even bolder shadow on hover */
 }
 
 /* Media query for smaller devices */
 @media (max-width: 768px) {
   .text-primary-new {
-    font-size: 1.5rem; /* Slightly smaller font for tablet and mobile */
-    letter-spacing: 1.5px; /* Adjust letter-spacing to fit smaller screens */
+    font-size: 2.5rem; /* Slightly smaller font for tablet and mobile */
+    letter-spacing: 3px; /* Adjust letter-spacing to fit smaller screens */
   }
 
   .text-primary-new:hover {
-    transform: scale(1.1) rotate(1deg); /* More subtle scale and rotation on smaller screens */
+    transform: scale(1.5) rotate(1deg); /* More subtle scale and rotation on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .text-primary-new {
-    font-size: 1.3rem; /* Smaller font size for mobile screens */
-    letter-spacing: 1px; /* Adjusted for smaller screens */
+    font-size: 2.3rem; /* Smaller font size for mobile screens */
+    letter-spacing: 3px; /* Adjusted for smaller screens */
   }
 
   .text-primary-new:hover {
-    transform: scale(1.05); /* Even more subtle scaling on mobile */
+    transform: scale(1.2); /* Even more subtle scaling on mobile */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow for smaller displays */
   }
 }
@@ -548,4 +548,48 @@ form {
     255,
     1
   ); /* Optional: change background on hover */
+}
+
+.text-primary-new-top {
+  font-family: "Pacifico", cursive; /* Fancy, stylish font */
+  font-size: 2.2rem; /* Larger font size for desktop */
+  letter-spacing: 2px; /* More spaced for a luxurious feel */
+  background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
+  -webkit-background-clip: text; /* Clip gradient to the text */
+  -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(0, 0, 0, 0.2),
+    -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
+  transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
+    letter-spacing 0.4s ease;
+  padding-bottom: 3px;
+}
+
+.text-primary-new-top:hover {
+  transform: scale(1.15) rotate(2deg); /* Scale up and rotate slightly on hover */
+  letter-spacing: 2px; /* Maintain spacing on hover for a dramatic effect */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Even bolder shadow on hover */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .text-primary-new-top {
+    font-size: 1.5rem; /* Slightly smaller font for tablet and mobile */
+    letter-spacing: 3px; /* Adjust letter-spacing to fit smaller screens */
+  }
+
+  .text-primary-new-top:hover {
+    transform: scale(1.1) rotate(1deg); /* More subtle scale and rotation on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-primary-new-top {
+    font-size: 1.3rem; /* Smaller font size for mobile screens */
+    letter-spacing: 3px; /* Adjusted for smaller screens */
+  }
+
+  .text-primary-new-top:hover {
+    transform: scale(1.05); /* Even more subtle scaling on mobile */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow for smaller displays */
+  }
 }
