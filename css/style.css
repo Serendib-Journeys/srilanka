@@ -489,13 +489,13 @@ form {
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .text-primary-new {
-  font-family: "Pacifico", cursive; /* Fancy, stylish font */
+  font-family: "Shadows Into Light", cursive; /* Fancy, stylish font */
   font-size: 2.5rem; /* Larger font size for desktop */
   letter-spacing: 2px; /* More spaced for a luxurious feel */
   background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
   -webkit-background-clip: text; /* Clip gradient to the text */
   -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.199),
     0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1), -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
   transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
     letter-spacing 0.4s ease;
@@ -505,7 +505,7 @@ form {
 .text-primary-new:hover {
   transform: scale(2.15) rotate(2deg); /* Scale up and rotate slightly on hover */
   letter-spacing: 3px; /* Maintain spacing on hover for a dramatic effect */
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Even bolder shadow on hover */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0); /* Even bolder shadow on hover */
 }
 
 /* Media query for smaller devices */
@@ -528,7 +528,7 @@ form {
 
   .text-primary-new:hover {
     transform: scale(1.2); /* Even more subtle scaling on mobile */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow for smaller displays */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0); /* Adjust shadow for smaller displays */
   }
 }
 
@@ -551,14 +551,14 @@ form {
 }
 
 .text-primary-new-top {
-  font-family: "Pacifico", cursive; /* Fancy, stylish font */
+  font-family: "Shadows Into Light", cursive; /* Fancy, stylish font */
   font-size: 2.2rem; /* Larger font size for desktop */
   letter-spacing: 2px; /* More spaced for a luxurious feel */
   background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
   -webkit-background-clip: text; /* Clip gradient to the text */
   -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), 1px 1px 0px rgba(0, 0, 0, 0.2),
-    -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.295),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.164), -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
   transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
     letter-spacing 0.4s ease;
   padding-bottom: 3px;
@@ -567,7 +567,7 @@ form {
 .text-primary-new-top:hover {
   transform: scale(1.15) rotate(2deg); /* Scale up and rotate slightly on hover */
   letter-spacing: 2px; /* Maintain spacing on hover for a dramatic effect */
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Even bolder shadow on hover */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.089); /* Even bolder shadow on hover */
 }
 
 /* Media query for smaller devices */
@@ -590,6 +590,6 @@ form {
 
   .text-primary-new-top:hover {
     transform: scale(1.05); /* Even more subtle scaling on mobile */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Adjust shadow for smaller displays */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.233); /* Adjust shadow for smaller displays */
   }
 }
