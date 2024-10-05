@@ -556,8 +556,8 @@ form {
   background: linear-gradient(45deg, #3db320, #4dff07); /* Gradient color */
   -webkit-background-clip: text; /* Clip gradient to the text */
   -webkit-text-fill-color: transparent; /* Transparent fill to show the gradient */
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.295),
-    0.5px 0.5px 0px rgba(0, 0, 0, 0.164), -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.199),
+    0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1), -1px -1px 0px rgba(255, 255, 255, 0.2); /* Layered shadows for thickness */
   transition: transform 0.4s ease-in-out, text-shadow 0.4s ease-in-out,
     letter-spacing 0.4s ease;
   padding-bottom: 3px;
